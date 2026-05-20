@@ -1,8 +1,10 @@
+import Navbar from "./components/Navbar";
+
 export default function Home() {
   return (
-    <main style={{ padding: 40 }}>
-      <h1>My Website</h1>
-      <p>Welcome to my first Next.js site I am excited</p>
+    <main>
+      <Navbar />
+      <h1>Home Page</h1>
     </main>
   );
 }
