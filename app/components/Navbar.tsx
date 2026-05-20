@@ -2,12 +2,48 @@ import Link from "next/link";
 
 export default function Navbar() {
   return (
-    <nav style={{ display: "flex", gap: 20, padding: 20 }}>
-      <Link href="/">Home</Link>
-      <Link href="/about">About</Link>
-      <Link href="/cv">CV</Link>
-      <Link href="/contact">Contact</Link>
-    </nav>
+    <>
+      <style>{`
+        @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500&display=swap');
+        .nav-link {
+          color: white;
+          text-decoration: none;
+          font-size: 13px;
+          letter-spacing: 0.1em;
+          text-transform: uppercase;
+          opacity: 0.5;
+          transition: opacity 0.2s;
+        }
+        .nav-link:hover {
+          opacity: 1;
+        }
+      `}</style>
+      <nav style={{
+        background: "#000",
+        padding: "0 2rem",
+        display: "flex",
+        alignItems: "center",
+        justifyContent: "space-between",
+        height: "60px",
+        fontFamily: "'Space Grotesk', sans-serif",
+        position: "relative",
+      }}>
+        <span style={{ color: "#fff", fontSize: "15px", fontWeight: 500, letterSpacing: "0.04em" }}>
+          James Hatherley
+        </span>
+        <div style={{
+          position: "absolute",
+          left: "50%",
+          transform: "translateX(-50%)",
+          display: "flex",
+          gap: "2.5rem",
+        }}>
+          <Link href="/" className="nav-link">Home</Link>
+          <Link href="/about" className="nav-link">About</Link>
+          <Link href="/cv" className="nav-link">CV</Link>
+          <Link href="/contact" className="nav-link">Contact</Link>
+        </div>
+      </nav>
+    </>
   );
 }
-
