@@ -3,7 +3,7 @@ import Image from "next/image";
 
 export default function About() {
   return (
-    <div style={{ background: "#000", minHeight: "100vh", fontFamily: "Space Grotesk, sans-serif" }}>
+    <div style={{ background: "#111", minHeight: "100vh", fontFamily: "Space Grotesk, sans-serif" }}>
       <style>{`
         @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500&display=swap');
       `}</style>
@@ -19,10 +19,8 @@ export default function About() {
         justifyContent: "space-between",
         gap: "4rem",
       }}>
-
-        {/* Left Side - Text */}
         <div style={{ flex: 1 }}>
-          <p style={{ color: "#888", fontSize: "13px", letterSpacing: "0.2em", textTransform: "uppercase", marginBottom: "1rem" }}>
+          <p style={{ color: "#4a8a4a", fontSize: "13px", letterSpacing: "0.2em", textTransform: "uppercase", marginBottom: "1rem" }}>
             About Me
           </p>
 
@@ -30,20 +28,19 @@ export default function About() {
             James<br />Hatherley
           </h1>
 
-          <p style={{ color: "#ccc", fontSize: "16px", lineHeight: 1.8, marginBottom: "1.5rem" }}>
+          <p style={{ color: "#aaa", fontSize: "16px", lineHeight: 1.8, marginBottom: "1.5rem" }}>
             I am a first-year Banking & Finance student at Cardiff University with a passion for financial markets, investment, and wealth management.
           </p>
 
-          <p style={{ color: "#ccc", fontSize: "16px", lineHeight: 1.8, marginBottom: "1.5rem" }}>
+          <p style={{ color: "#aaa", fontSize: "16px", lineHeight: 1.8, marginBottom: "1.5rem" }}>
             Prior to university I gained hands-on experience at St. James's Place, one of the UK's leading wealth management firms, where I developed a strong foundation in client relationships and financial planning.
           </p>
 
-          <p style={{ color: "#ccc", fontSize: "16px", lineHeight: 1.8 }}>
+          <p style={{ color: "#aaa", fontSize: "16px", lineHeight: 1.8 }}>
             Outside of finance I enjoy golf, fitness, and music. I am based in Dorset and currently studying in Cardiff.
           </p>
         </div>
 
-        {/* Right Side - Photo */}
         <div style={{ flexShrink: 0, width: "320px", height: "400px", position: "relative", overflow: "hidden" }}>
           <Image
             src="/profile.jpg"
@@ -54,7 +51,6 @@ export default function About() {
             priority
           />
         </div>
-
       </main>
     </div>
   );

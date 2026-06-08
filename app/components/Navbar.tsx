@@ -19,7 +19,7 @@ export default function Navbar() {
         }
       `}</style>
       <nav style={{
-        background: "#000",
+        background: "#1a2e1a",
         padding: "0 2rem",
         display: "flex",
         alignItems: "center",
@@ -28,7 +28,7 @@ export default function Navbar() {
         fontFamily: "'Space Grotesk', sans-serif",
         position: "relative",
       }}>
-        <span style={{ color: "#fff", fontSize: "15px", fontWeight: 500, letterSpacing: "0.04em" }}>
+        <span style={{ color: "#7ab87a", fontSize: "15px", fontWeight: 500, letterSpacing: "0.04em" }}>
           James Hatherley
         </span>
         <div style={{
