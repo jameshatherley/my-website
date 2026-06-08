@@ -85,7 +85,7 @@ export default function Home() {
             <a href="https://www.linkedin.com/in/james-hatherley-7493aa2ba/" target="_blank" rel="noopener noreferrer" className="btn-linkedin">
               LinkedIn
             </a>
-            <a href="/James_Hatherley_CV.pdf" download className="btn-cv">
+            <a href="/JamesHatherleyCV.pdf" download className="btn-cv">
               Download CV
             </a>
           </div>
