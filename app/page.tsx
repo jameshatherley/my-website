@@ -67,6 +67,7 @@ export default function Home() {
         gap: "4rem",
       }}>
 
+        {/* Left Side - Text */}
         <div style={{ flex: 1 }}>
           <p style={{ color: "#4a8a4a", fontSize: "13px", letterSpacing: "0.2em", textTransform: "uppercase", marginBottom: "1rem" }}>
             Welcome
@@ -84,9 +85,9 @@ export default function Home() {
             <a href="https://www.linkedin.com/in/james-hatherley-7493aa2ba/" target="_blank" rel="noopener noreferrer" className="btn-linkedin">
               LinkedIn
             </a>
-            <Link href="/cv" className="btn-cv">
-              View My CV
-            </Link>
+            <a href="/James_Hatherley_CV.pdf" download className="btn-cv">
+              Download CV
+            </a>
           </div>
           <div className="highlight-grid">
             <div className="highlight-item">
@@ -104,15 +105,17 @@ export default function Home() {
           </div>
         </div>
 
+        {/* Right Side - Photos */}
         <div style={{
           flexShrink: 0,
           width: "420px",
-          height: "520px",
           position: "relative",
         }}>
+
+          {/* Main landscape photo */}
           <div style={{
             width: "100%",
-            height: "100%",
+            height: "520px",
             position: "relative",
             overflow: "hidden",
           }}>
@@ -125,9 +128,11 @@ export default function Home() {
               priority
             />
           </div>
+
+          {/* Overlapping portrait - bottom left corner */}
           <div style={{
             position: "absolute",
-            bottom: "-24px",
+            bottom: "70px",
             left: "-24px",
             width: "150px",
             height: "180px",
@@ -145,6 +150,21 @@ export default function Home() {
               style={{ objectFit: "cover", objectPosition: "center top" }}
             />
           </div>
+
+          {/* Coding credit below photos */}
+          <p style={{
+            marginTop: "1rem",
+            paddingTop: "1rem",
+            paddingLeft: "135px",
+            color: "#4a8a4a",
+            fontSize: "11px",
+            letterSpacing: "0.1em",
+            lineHeight: 1.8,
+            borderTop: "1px solid #1a2e1a",
+          }}>
+            This website was designed and built by me using Next.js, TypeScript and Tailwind CSS — deployed via Vercel with a custom domain. No website builders were used.
+          </p>
+
         </div>
 
       </main>

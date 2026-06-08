@@ -40,7 +40,6 @@ export default function Navbar() {
         }}>
           <Link href="/" className="nav-link">Home</Link>
           <Link href="/about" className="nav-link">About</Link>
-          <Link href="/cv" className="nav-link">CV</Link>
           <Link href="/contact" className="nav-link">Contact</Link>
         </div>
       </nav>
